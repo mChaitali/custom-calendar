@@ -1,0 +1,24 @@
+.date-input-container {
+  position: relative;
+  display: inline-block;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar-popover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+}

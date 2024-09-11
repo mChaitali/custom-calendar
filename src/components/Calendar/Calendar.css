@@ -1,0 +1,136 @@
+.calendar {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header select {
+  margin: 0 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.calendar-header button {
+  border: none;
+  background-color: transparent;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day-name {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 7px 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.calendar-day:hover {
+  background-color: #f0f0f0;
+}
+
+.calendar-day.selected {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+  cursor: default;
+}
+
+.calendar-day.disabled {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.calendar-day.min-date {
+  background-color: #ffcccc;
+  color: red;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+
+.calendar-day.max-date {
+  background-color: #cce5ff;
+  color: #0000ff;
+  border-radius: 50%;
+  border: 2px solid #0000ff;
+}
+
+.calendar-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.calendar-footer button {
+  padding: 8px;
+  border: 1px solid #0000ff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+  background-color: #cce5ff;
+  font-weight: 600;
+}
+
+.calendar-footer button:hover {
+  opacity: 0.8;
+}
+
+.calendar-footer button:focus {
+  outline: none;
+}
+
+.symbols {
+  text-align: left;
+}
+
+.symbols p {
+  margin: 0.5rem 0;
+}
+
+.circle {
+  border: 2px solid;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.red {
+  border-color: red;
+  background-color: #ffcccc;
+}
+
+.blue {
+  border-color: #0000ff;
+  background-color: #cce5ff;
+}
+
+.filled {
+  border-color: #0000ff;
+  background-color: #0000ff;
+}
